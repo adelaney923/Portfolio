@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" media="screen" type="text/css">
+    <link rel='stylesheet' href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">    
     <title>Alexandria Delaney: Software Engineer</title>
 </head>
 <body>
@@ -12,20 +16,17 @@
         <div class='header'>
             <div class='header-nav'>
                 <a class='brand-logo'>
-                    <img class='logo-picture' src=>
-                    <!-- insert an image with brand logo, something simple like AD for now -->
                     <span class='logo-text'>Alex Delaney</span>
                 </a>
                 <div class='nav-bar'>
                     <nav id='navigation'>
-                        <ul>
+                        <ul class='menu-items'>
                             <li>About Me</li>
                             <li>Projects</li>
                             <li>Contact</li>
                         </ul>
                     </nav>
                     <div class='menu-icon'>
-                        <div class="hamburger"">
                             <div class="bar1"></div>
                             <div class="bar2"></div>
                             <div class="bar3"></div>
@@ -36,31 +37,44 @@
         </div>
 
         <div class ='main-content'>
-            <div class ='landing-page'></div>
+            <div id ='landing-page'>
                 <p class='welcome-text'><span class='intro-statement'>Hello, my name is Alex.</span><br> <span class='intro-line'>Future Software Engineer.</p>
+            </div>
 
-
-            <div class='about-me-page'></div>
-            <p><span class='sub-header'>About Me.</span></p>
+            <div id='about-me-page'>
+                <p><span class='sub-header'>About Me.</span></p>
                 <p class='about-me-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt. Fringilla phasellus faucibus scelerisque
                 eleifend donec pretium vulputate. Elementum sagittis vitae et leo duis ut. Congue quisque egestas diam in arcu.</p>
+            </div>
 
-            <div class='projects-page'></div>
+            <div id='projects-page'></div>
             <p><span class='sub-header'>Projects.</span></p>
             <div class='my-projects'>
-                <div class='project-1'>First Project Here</div>
-                <div class='project-2'>Second Project Here</div>
-                <div class='project-3'>Third Project Here</div>
+                <ul class='featured-projects'>
+                    <li class='project1'>
+                        <img class='project-image' src="https://res.cloudinary.com/adelaney923/image/upload/v1633968359/Portfolio%20Images/coming_soon_placeholder_zohwf7.png" alt='image coming soon'>
+                    </li>
+                    <li class='project2'>
+                        <img class='project-image'
+                        src="https://res.cloudinary.com/adelaney923/image/upload/v1633968359/Portfolio%20Images/coming_soon_placeholder_zohwf7.png"
+                        alt='image coming soon'>
+                    </li>
+                    <li class='project3'>
+                        <img class='project-image'
+                        src="https://res.cloudinary.com/adelaney923/image/upload/v1633968359/Portfolio%20Images/coming_soon_placeholder_zohwf7.png"
+                        alt='image coming soon'>
+                    </li>
+                </ul>
             </div>
 
 
-            <div class='contact-page'></div>
+            <div id='contact-page'></div>
             <p><span class='sub-header'>Contact Me.</span></p>
         </div>
 
         <footer>
-                This is my footer
+            <p class='footer'>Designed & Built by Alex Delaney</p>
         </footer>
     </div>
 
