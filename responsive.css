@@ -42,7 +42,8 @@
   .featured-projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-template-rows: 1fr;
+    grid-gap: .5rem;
     padding: 0px;
     list-style-type: none;
   }
