@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 5px;
-    max-width: 100%
+    max-width: 100%;
 }
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -16,9 +16,6 @@ body {
 .welcome-text {
     margin: 50px 10px;
     text-align: center;
-}
-#landing-page {
-    background-color: powderblue;
 }
 .intro-statement {
     font-weight: bolder;
@@ -37,27 +34,6 @@ body {
     margin: 10px;
     display: grid;
 }
-.logo-text {
-    font-weight: bold;
-    font-size: 120%;
-}
-/* .bar1, .bar2, .bar3 {
-  width: 25px;
-  height: 2px;
-  background-color: #333;
-  margin: 6px 0px;
-} */
-/*hiding the menu items while in mobile */
-/* .hidden {
-    display: none;
-    list-style: none;
-    padding: 0px;
-    font-size: 120%;
-
-} */
-/* .menu-items > li {
-    margin: 0px 10px;
-} */
 .sub-header {
     margin: 0px;
     font-size: 140%;
@@ -70,15 +46,25 @@ body {
     width: 100%;
     height: auto;
 }
-/* ul {
-    list-style-type: none;
-} */
+.carousel-item, .carousel-item-active {
+    margin: 0px
+}
 .project-image {
     max-width: 100%;
     max-height: 80%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+}
+/* form {
+    margin: 0px auto;
+    width: 350px;
+}
+.form-items {
+    list-style-type: none;
+}
+label {
+    display:inline-block;
+    text-align: right; */
 }
 .contact-icons {
     width:20%;
@@ -90,4 +76,7 @@ footer {
 .footer {
     text-align: center;
     font-size: 80%;
+}
+.email-section, .linkedin-section {
+    text-align: center
 }
