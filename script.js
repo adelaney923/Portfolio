@@ -1,3 +1,3 @@
-$('.menu-icon').on('click', function () {
-    $('.menu-items').toggleClass('hide')
+$('.project-image').hover(function () {
+    $(this).siblings().toggleClass('hide')
 })
