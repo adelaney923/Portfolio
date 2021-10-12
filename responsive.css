@@ -14,6 +14,24 @@
     font-style: italic;
     font-size: 240%;
   }
+  #contact-form {
+      grid-gap: 1.5rem;
+      margin-top: 15px;
+  }
+  #name {
+      grid-column: 1/3;
+  }
+  #mail {
+      grid-column: 3/5;
+  }
+  #msg {
+      grid-column: 1/5;
+      grid-row: 2/4;
+  }
+  #form-button {
+      grid-column: 2/4;
+      margin: auto 40px;
+  }
 }
 
 /* desktop/large screens */
