@@ -11,10 +11,26 @@ body {
     overflow-x: hidden;
     font-size: 110%;
 }
+.brand-img {
+    width: 50px;
+    height: 40px;
+}
 .navbar {
     background-color: white;
     font-family: 'Source Sans Pro', sans-serif;
-    margin-top: 0px;
+    margin:0px auto;
+}
+.navbar-brand {
+    padding:0px;
+    margin: 0px 0px;
+}
+.navbar-toggler {
+    padding: 0px !important;
+}
+.navbar-light .navbar-toggler {
+    color: black !important;
+    border-color: black !important;
+    border: transparent !important;
 }
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
@@ -47,20 +63,14 @@ body {
     float: left;
     margin-right: 15px;
 }
-.about-me-text {
-    float: right;
-}
 .sub-header {
     margin: 0px;
     font-size: 140%;
     font-weight: bolder;
 }
 #projects-page, #landing-page, #about-me-page, #contact-page {
-    padding-top: 76px;
+    padding-top: 86px;
 }
-/* .featured-projects > li {
-    position: relative;
-} */
 .featured-projects {
     display: none;
 }

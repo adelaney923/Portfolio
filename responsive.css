@@ -14,6 +14,14 @@
     font-style: italic;
     font-size: 240%;
   }
+  .about-content {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+  .about-me-text {
+      font-size: 130%;
+  }
   #contact-form {
       grid-gap: 1.5rem;
       margin-top: 15px;
@@ -38,6 +46,9 @@
 @media only screen and (min-width: 1024px) {
   .hidden {
     display: none;
+  }
+    .about-me-text {
+      font-size: 150%;
   }
   #projects-page, #landing-page, #about-me-page, #contact-page {
     padding-top: 91px;
@@ -65,7 +76,7 @@
 .project-title {
     position: absolute;
     bottom: 70px;
-    left: 95px;
+    left: 35%;
     color: white;
     text-align: center
 }
@@ -78,5 +89,8 @@
 }
 .hide {
     display: none;
+}
+#contact-form {
+    margin-top: 20px;
 }
 }
