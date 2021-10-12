@@ -14,18 +14,6 @@
     font-style: italic;
     font-size: 240%;
   }
-  .project1 {
-    grid-column: 1/2;
-    grid-row: 1/4;
-  }
-  .project2 {
-    grid-column: 2/3;
-    grid-row: 1/4;
-  }
-  .project3 {
-    grid-column: 3/4;
-    grid-row: 1/4;
-  }
 }
 
 /* desktop/large screens */
@@ -33,19 +21,16 @@
   .hidden {
     display: none;
   }
-  /* .my-projects-desktop {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    padding: 0px;
-  } */
+  #projects-page, #landing-page, #about-me-page, #contact-page {
+    padding-top: 91px;
+}
   .featured-projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: .5rem;
     padding: 0px;
     list-style-type: none;
+    align-items: center;
   }
   .project1 {
     grid-column: 1/2;
@@ -56,5 +41,24 @@
   .project3 {
     grid-column: 3/4;
   }
-
+  .project-box {
+    position: relative;
+}
+.project-title {
+    position: absolute;
+    bottom: 70px;
+    left: 95px;
+    color: white;
+    text-align: center
+}
+.project-description-desktop {
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+}
+.hide {
+    display: none;
+}
 }
