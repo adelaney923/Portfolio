@@ -25,12 +25,12 @@ body {
 }
 .intro-statement {
     font-weight: bolder;
-    font-size: 120%;
+    /* font-size: 120%; */
 }
 .intro-line {
     font-weight: bolder;
     font-style: italic;
-    font-size: 160%
+    /* font-size: 160% */
 }
 .container {
     margin: 10px;
@@ -108,7 +108,9 @@ input, textarea {
 .form-button {
     background-color: white;
     color: black;
-    border-radius: 20px
+    border-radius: 5px;
+    border-width: 1px;
+    margin-left: 3px;
 }
 
 .contact-icons {
