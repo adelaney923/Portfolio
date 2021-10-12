@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 5px;
     max-width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+
 }
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -12,6 +14,10 @@ body {
 .navbar {
     background-color: white;
     font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 0px;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
 }
 .welcome-text {
     margin: 50px 10px;
@@ -33,12 +39,28 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 10px;
     display: grid;
+    padding-top: 70px
+}
+.about-me-image {
+    border-radius: 50%;
+    width: 40%;
+    float: left;
+    margin-right: 15px;
+}
+.about-me-text {
+    float: right;
 }
 .sub-header {
     margin: 0px;
     font-size: 140%;
     font-weight: bolder;
 }
+#projects-page, #landing-page, #about-me-page, #contact-page {
+    padding-top: 76px;
+}
+/* .featured-projects > li {
+    position: relative;
+} */
 .featured-projects {
     display: none;
 }
@@ -50,22 +72,45 @@ body {
     margin: 0px
 }
 .project-image {
+    position: relative;
     max-width: 100%;
     max-height: 80%;
     display: block;
     margin: auto;
 }
-/* form {
-    margin: 0px auto;
-    width: 350px;
+.project-description {
+    font-size: 80%;
+    padding-bottom: 0px;
+}
+label {
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+}
+textarea {
+    vertical-align: top;
+}
+input, textarea {
+    width: 180px;
+    box-sizing: border-box;
 }
 .form-items {
     list-style-type: none;
+    padding: 0px;
 }
-label {
-    display:inline-block;
-    text-align: right; */
+.form-items > li {
+    margin: 10px 0px 10px 20px
 }
+.button {
+    padding-top: 10px;
+    padding-left: 70px;
+}
+.form-button {
+    background-color: white;
+    color: black;
+    border-radius: 20px
+}
+
 .contact-icons {
     width:20%;
     height:20%;
