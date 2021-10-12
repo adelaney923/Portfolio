@@ -94,11 +94,17 @@ body {
 }
 footer {
     margin: 10px;
+    background-color: black;
 }
 .footer {
     text-align: center;
     font-size: 80%;
+    color: white
 }
-.email-section, .linkedin-section {
+.linkedin-section {
     text-align: center
+}
+.fab {
+    color:white;
+    font-size: 30px
 }

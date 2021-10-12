@@ -1,0 +1,19 @@
+.main-content {
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 110%;
+}
+.welcome-text {
+    margin: 50px 10px;
+    text-align: center;
+}
+.intro-statement {
+    font-weight: bolder;
+    /* font-size: 120%; */
+}
+.intro-line {
+    font-weight: bolder;
+    font-style: italic;
+    /* font-size: 160% */
+}
