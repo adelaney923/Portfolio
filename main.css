@@ -14,6 +14,8 @@ body {
     font-size: 110%;
 }
 .container {
+    max-width: 100% !important;
+    margin: 0 !important;
     padding: 0 !important;
 }
 .enter-icon {
@@ -74,7 +76,7 @@ body {
     margin-left: 15px;
 }
 .about-me-text {
-    text-align: justify;
+    text-align: center;
 }
 .sub-header {
     justify-content: center;
@@ -126,10 +128,9 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 3fr 1fr;
     grid-gap: 1rem;
-    margin: 10px 20px;
+    margin: 10px 20px 10px 20px;
 }
 footer {
-    margin: 10px;
     background-color: black;
 }
 .footer {

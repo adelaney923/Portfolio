@@ -19,3 +19,19 @@ $('.navbar-nav').on('click', function () {
     $('.navbar-toggler').toggleClass('collapsed')
     $('.navbar-collapse').toggleClass('show')
 })
+$(window).on('scroll', function () {
+    $('.about-me-text').fadeIn('slow')
+    $('.skills-icons').fadeIn('slow')
+})
+$('.skill')
+    .mouseover(function() {
+        $(this).animate({
+            'font-size': '80px'
+        })
+    })
+    .mouseleave(function () {
+        $(this).animate({
+            'font-size': '40px'
+        })
+    })
+
