@@ -2,11 +2,10 @@
 const subForm = (event) => {
     event.preventDefault()
   $.ajax({
-    url: "https://api.apispreadsheets.com/data/19335/",
     type: "post",
-    data: $("#contact-form").serializeArray(),
+    url: "https://api.apispreadsheets.com/data/19335/",
+    data: $("#contact-form").serialize(),
     success: function () {
-      console.log("linked");
       alert("Form Data Submitted :)");
     },
     error: function () {
@@ -15,7 +14,7 @@ const subForm = (event) => {
   });
 }
 
-$('#form-button').on('submit', subForm)
+$('#form-button').submit(subForm)
 
 
 
