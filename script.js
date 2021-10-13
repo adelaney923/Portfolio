@@ -1,27 +1,19 @@
-//contact form api
-const subForm = (event) => {
-    event.preventDefault()
-  $.ajax({
-    type: "post",
-    url: "https://api.apispreadsheets.com/data/19335/",
-    data: $("#contact-form").serialize(),
-    success: function () {
-      alert("Form Data Submitted :)");
-    },
-    error: function () {
-      alert("There was an error :(");
-    },
-  });
-}
-
-$('#form-button').submit(subForm)
-
-
+//contact form ap
+$('button').on('click', function (event) {
+    event.preventDefault();
+    console.log('hey');
+    $.ajax({
+      url: "https://api.apispreadsheets.com/data/19335/",
+      method: "POST"
+    })
+    .then( () => console.log('hi'))
+})
 
 
 //jquery animations
 $('.project-image').hover(function () {
     $(this).siblings().toggleClass('hide')
+    $(this).toggleClass('blur');
 })
 $('.navbar-nav').on('click', function () {
     $('.navbar-toggler').toggleClass('collapsed')
