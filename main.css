@@ -87,6 +87,15 @@ body {
     padding-top: 86px;
     text-align: center;
 }
+.skills-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skill {
+    color: black;
+    font-size: 40px;
+}
 .featured-projects {
     display: none;
 }
@@ -131,7 +140,7 @@ footer {
 .linkedin-section {
     text-align: center
 }
-.fab {
+.fa-linkedin {
     color:white;
     font-size: 30px
 }
