@@ -1,15 +1,20 @@
 * {
     box-sizing: border-box;
-    /* margin: 5px; */
+    margin: 0;
+    padding: 0;
     max-width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
 
 }
 body {
+    display: block;
     font-family: 'Source Sans Pro', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
     font-size: 110%;
+}
+.container {
+    padding: 0 !important;
 }
 .enter-icon {
     text-align: center;
@@ -55,41 +60,37 @@ body {
     font-style: italic;
     /* font-size: 160% */
 }
-.container {
-    /* margin: 10px; */
-}
 .main-content {
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 10px;
+    /* margin: 10px; */
     display: grid;
+    padding: 0;
     padding-top: 70px
 }
 .about-me-image {
     border-radius: 50%;
     width: 40%;
-    float: left;
-    margin-right: 15px;
+    float: right;
+    margin-left: 15px;
+}
+.about-me-text {
+    text-align: justify;
 }
 .sub-header {
+    justify-content: center;
     margin: 0px;
     font-size: 140%;
     font-weight: bolder;
     color: #0000ff;
-    float:left;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
 }
-#projects-page, #landing-page, #about-me-page, #contact-page {
+#projects-page, #landing-page, #about-me-page, #contact-page, #skills-page {
     padding-top: 86px;
-}
-.about-me-text {
-    margin-left: 40px;
+    text-align: center;
 }
 .featured-projects {
     display: none;
 }
 .carousel {
-    margin-left: 40px;
 }
 .carousel-img {
     width: 100%;
@@ -116,7 +117,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 3fr 1fr;
     grid-gap: 1rem;
-    margin-left: 30px
+    margin: 10px 20px;
 }
 footer {
     margin: 10px;
