@@ -4,6 +4,7 @@
     padding: 0;
     max-width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
+    height: 100%
 
 }
 body {
@@ -18,13 +19,52 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 }
+.index-container {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.index-image {
+    height: 100%;
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    color: white;
+}
 .enter-icon {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
     text-align: center;
 }
 .fa-chevron-down {
-    color: black;
+    color: white;
     font-size: 30px;
+    /* color: white; */
 }
+.intro-statement {
+    font-size: 110%
+}
+.intro-line {
+    font-style: italic;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 5s steps(50, end); 
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+.about-me-image {
+    width: 30%;
+    border-radius: 50%;
+}
+
 .brand-img {
     width: 50px;
     height: 40px;
@@ -53,27 +93,12 @@ body {
     margin: 50px 10px;
     text-align: center;
 }
-.intro-statement {
-    font-weight: bolder;
-    /* font-size: 120%; */
-}
-.intro-line {
-    font-weight: bolder;
-    font-style: italic;
-    /* font-size: 160% */
-}
 .main-content {
     font-family: 'Source Sans Pro', sans-serif;
     /* margin: 10px; */
     display: grid;
     padding: 0;
     padding-top: 70px
-}
-.about-me-image {
-    border-radius: 50%;
-    width: 40%;
-    float: right;
-    margin-left: 15px;
 }
 .about-me-text {
     text-align: center;

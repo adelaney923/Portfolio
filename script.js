@@ -1,4 +1,4 @@
-//contact form ap
+//contact form api
 $('button').on('click', function (event) {
     event.preventDefault();
     console.log('hey');
@@ -34,4 +34,7 @@ $('.skill')
             'font-size': '40px'
         })
     })
+$(window).ready(function() {
+    $('#landing-page').fadeIn('slow')
+})
 

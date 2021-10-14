@@ -5,10 +5,10 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 2| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 3| Interactivity with jQuery | Incomplete
+|Day 1| Project Description | Complete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete
+|Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 3| Interactivity with jQuery | Somewhat Complete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
@@ -56,24 +56,24 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Basic HTML and CSS | H |4hr | hr |
-| Hamburger Nav bar | H | 2hr | hr |
-| Regular Nav | H | 2hr | hr |  
-| Projects Area | H | 3hr|  hr | 
-| Other sections | M | 2hr | hr|
-| Working with API to create form | H | 2hrs|  hr | 
-| Make it look good | H | 4hr | hr |
-| Total | H | 19hrs| hrs |
+| Basic HTML and CSS | H |4hr | 8hr |
+| Hamburger Nav bar | H | 2hr | 2hr |
+| Regular Nav | H | 2hr | 2hr |  
+| Projects Area | H | 3hr|  4hr | 
+| Other sections | M | 2hr | 8hr|
+| Working with API to create form | H | 2hrs|  4hr |
+| Make it look good | H | 4hr | 4hr |
+| Total | H | 19hrs| 32hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Projects Carousel | L | 3hr | hr |
+| Projects Carousel | L | 3hr | 2hr |
 | Make Page Dynamic | L | 6hr | hr |
 | Total | H | 9hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ Use this section to list all supporting libraries and their role in the project. 
 
 ## Code Snippet
 
@@ -90,5 +90,5 @@ function reverse(string) {
 
 
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: ERR No Internet Connection - trying to connect my submit form to my API
+**RESOLUTION**: No resolution yet. Hoping to revisit later
