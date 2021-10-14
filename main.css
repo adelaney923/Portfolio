@@ -4,7 +4,6 @@
     padding: 0;
     max-width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
-    height: 100%
 
 }
 body {
@@ -13,6 +12,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     font-size: 110%;
+}
+.index-body, .index-html {
+    height: 100%
 }
 .container {
     max-width: 100% !important;
