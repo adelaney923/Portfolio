@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
-
 }
 body {
     display: block;
@@ -34,8 +32,9 @@ body {
 }
 .welcome-text {
     position: absolute;
+    left: 50%;
     top: 50%;
-    color: white;
+    transform: translate(-50%,-50%);
 }
 .enter-icon {
     position: absolute;
@@ -49,24 +48,46 @@ body {
     /* color: white; */
 }
 .intro-statement {
-    font-size: 110%
+    font-size: 250%
 }
 .intro-line {
+    font-family: 'Roboto Mono', monospace;
     font-style: italic;
+    text-align: center;
+    /* margin-left: 18%; */
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    width: 30em;
-    animation: type 5s steps(50, end); 
+    border-right: 4px solid #0000ff;
+    animation: type 3s steps(25, end), blink .75s step-end infinite; 
+    box-sizing: border-box;
 }
-@keyframes type{ 
-  from { width: 0; } 
-} 
+@keyframes type { 
+  from { 
+      width: 0% 
+    } 
+   to {
+       width: 100%
+   }
+}
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #0000ff
+    }
+}
+
+.about-me-text {
+    display:inline-block;
+    text-align: justify;
+}
 .about-me-image {
     width: 30%;
     border-radius: 50%;
+    float: right;
 }
-
 .brand-img {
     width: 50px;
     height: 40px;
@@ -128,8 +149,6 @@ body {
 .featured-projects {
     display: none;
 }
-.carousel {
-}
 .carousel-img {
     width: 100%;
     height: auto;
@@ -156,6 +175,14 @@ body {
     grid-template-rows: 1fr 1fr 3fr 1fr;
     grid-gap: 1rem;
     margin: 10px 20px 10px 20px;
+}
+#form-button {
+    border: 0.5px solid black;
+    background-color: white;
+    border-radius: 5%
+}
+#form-button:hover {
+    transform: scale(0.9)
 }
 footer {
     background-color: black;

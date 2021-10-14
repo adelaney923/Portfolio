@@ -84,9 +84,11 @@
     position: relative;
 }
 .project-title {
+    text-transform: uppercase;
     position: absolute;
-    bottom: 70px;
-    left: 35%;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
     color: white;
     text-align: center
 }
@@ -95,7 +97,9 @@
 }
 .project-description-desktop {
     position: absolute;
-    bottom: 5px;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
     color: white;
     text-align: center;
     padding: 10px 10px;
