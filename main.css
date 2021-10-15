@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
+    /* background-color: black; */
 }
 body {
     display: block;
@@ -18,6 +19,7 @@ body {
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    /* background-color: black; */
 }
 .index-container {
     height: 100%;
@@ -40,6 +42,7 @@ body {
     position: absolute;
     bottom: 20%;
     left: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
 }
 .fa-chevron-down {
@@ -80,13 +83,17 @@ body {
 }
 
 .about-me-text {
-    display:inline-block;
-    text-align: justify;
+    margin: 15px;
+    text-align: left;
 }
 .about-me-image {
     width: 30%;
     border-radius: 50%;
-    float: right;
+    float: left;
+    margin: 15px;
+}
+.about-me-image:hover {
+    filter: grayscale(80%)
 }
 .brand-img {
     width: 50px;
@@ -112,6 +119,43 @@ body {
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
 }
+.nav-link:hover {
+    color: #0000ff !important;
+}
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+/**
+ * 1. Adjust this to size
+ */
+
+.switch {
+  display: inline-block;
+  font-size: 20px; /* 1 */
+  height: 1em;
+  width: 2em;
+  background: black;
+  border-radius: 1em;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #FFF;
+  box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+          transition: all 300ms;
+}
+
+.switch input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+     -moz-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
 .welcome-text {
     margin: 50px 10px;
     text-align: center;
@@ -122,9 +166,6 @@ body {
     display: grid;
     padding: 0;
     padding-top: 70px
-}
-.about-me-text {
-    text-align: center;
 }
 .sub-header {
     justify-content: center;

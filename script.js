@@ -19,22 +19,35 @@ $('.navbar-nav').on('click', function () {
     $('.navbar-toggler').toggleClass('collapsed')
     $('.navbar-collapse').toggleClass('show')
 })
-$(window).on('scroll', function () {
-    $('.about-me-text').fadeIn('slow')
-    $('.skills-icons').fadeIn('slow')
-})
 $('.skill')
     .mouseover(function() {
+        $(this).css('color','#0000ff');
         $(this).animate({
-            'font-size': '80px'
+            'font-size': '80px',
         })
     })
     .mouseleave(function () {
+        $(this).css('color', 'black')
         $(this).animate({
             'font-size': '40px'
         })
     })
-$(window).ready(function() {
-    $('#landing-page').fadeIn('slow')
+$('input[type="checkbox"]').on('click', function() {
+    if($(this).prop('checked') == true) {
+        $('.container').css('background','black')
+        $('.container').css('color','white')
+        $('.featured-projects').css('background-color', 'white')
+        $('.skill').css('color', 'white')
+        $('nav').removeClass('navbar-light')
+        $('nav').addClass("navbar-dark bg-dark");
+    }
+    else if($(this).prop('checked') == false) {
+        $(".container").css("background", "white");
+        $(".container").css("color", "black");
+        $(".featured-projects").css("background-color", "white");
+        $(".skill").css("color", "black");
+        $("nav").removeClass("navbar-dark bg-dark");
+        $("nav").addClass("navbar-light");
+    }
 })
 
