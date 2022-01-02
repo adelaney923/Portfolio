@@ -1,4 +1,5 @@
 //contact form api
+//did not get it to work
 $('button').on('click', function (event) {
     event.preventDefault();
     console.log('hey');
@@ -32,7 +33,10 @@ $('.skill')
             'font-size': '40px'
         })
     })
+
+//light/dark mode
 $('input[type="checkbox"]').on('click', function() {
+    //.prop checks status of checkbox
     if($(this).prop('checked') == true) {
         $('.container').css('background','black')
         $('.container').css('color','white')

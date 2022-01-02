@@ -62,6 +62,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     border-right: 4px solid #0000ff;
+    /* //steps sets the frames, 25 is number of characters */
     animation: type 3s steps(25, end), blink .75s step-end infinite; 
     box-sizing: border-box;
 }
